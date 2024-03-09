@@ -1,0 +1,244 @@
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Prevents scrolling */
+    background: #000; /* Optional: background for the whole page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Start Screen Styles */
+#startScreen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10; /* Ensures it's above the game container */
+}
+
+/* Apply this class to all buttons for a consistent look */
+.button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Ensure the entire page is covered for the effect */
+.crawlSection {
+    z-index: 20; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    overflow: hidden;
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: flex-end; /* Start from the bottom */
+    perspective: 300px; /* Adjust as needed for depth effect */
+}
+
+.closeButton {
+    z-index: 21; /* Ensure it's above the .crawlSection */
+    /* Other styles */
+}
+
+/* Style for the crawling text */
+.crawlContent {
+    transform-origin: 50% 100%;
+    transform: rotateX(20deg); /* Tilt the text */
+    animation: crawlEffect 80s linear forwards; /* Adjust time as needed */
+    color: yellow; /* Star Wars-like color */
+    text-align: justify;
+    white-space: pre-wrap; /* Preserve formatting */
+}
+
+/* Keyframes for the animation */
+@keyframes crawlEffect {
+    0% {
+        transform: rotateX(20deg) translateY(100vh);
+    }
+    100% {
+        transform: rotateX(20deg) translateY(-2500px); /* Adjust distance */
+    }
+}
+
+
+/* Pause Menu Styles */
+#pauseMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+
+#pauseMenu button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #ffcc00;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Game Container Styles */
+#game-container {
+    position: relative;
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
+    margin: auto;
+    overflow: hidden; /* Keeps all game elements within the game area */
+}
+
+/* Spaceship Styles */
+#spaceship {
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url('images/spaceship.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Bullet Styles */
+.bullet {
+    width: 5px;
+    height: 10px;
+    background-color: #fff;
+    position: absolute;
+}
+
+/* Enemy Styles */
+.enemy {
+    width: 50px; /* Adjust based on the enemy images' sizes */
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+
+/* Star Styles */
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.8; /* Semi-transparent */
+}
+
+/* Game Over Notice Styles */
+#gameOverNotice {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent overlay */
+}
+
+/* Replay Button Styles */
+#replayButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#replayButton:hover {
+    background-color: #218838;
+}
+
+#score, #lives {
+    color: white; /* Ensure visibility against the background */
+    position: absolute;
+    z-index: 2; /* Ensure they are above other elements */
+}
+
+#score {
+    top: 10px;
+    left: 10px;
+}
+
+#lives {
+    top: 10px;
+    right: 10px;
+}
+
+.powerUp {
+    position: absolute;
+    width: 20px; /* Customize as needed */
+    height: 20px; /* Customize as needed */
+    background-color: gold; /* Visual cue for power-up */
+    border-radius: 50%; /* Circle shape for power-up */
+    /* Add any additional styling as needed */
+}
+
+#shield {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid rgb(231, 238, 238);
+    box-sizing: border-box;
+    pointer-events: none;
+    display: none; /* Initially hidden */
+    --shield-color: cyan; /* Default shield color */
+    border: 1px solid var(--shield-color);
+}
+
+/* Flashing effect with color change */
+@keyframes flashWithColorChange {
+    0%, 100% { 
+        opacity: 1;
+        border-color: var(--shield-color); /* Default color */
+    }
+    50% { 
+        opacity: 0.5;
+        border-color: red; /* Flashing color */
+    }
+}
+  
+.flashing {
+    animation: flashWithColorChange 0.5s infinite;
+}

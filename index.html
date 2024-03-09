@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZTAR WARZ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Start Screen with Start Game Button -->
+    <div id="startScreen">
+        <button id="startButton" class="button">Start Game</button>
+        <button id="howToPlayButton" class="button">How to Play</button>
+        <button id="aboutUsButton" class="button">About Us</button>
+        
+    </div> 
+    
+    <!-- How to Play Section --> 
+    <div id="howToPlaySection" class="crawlSection" style="display: none;">
+        <div class="crawlContent">
+            <p>HOW TO PLAY</p>
+            <p>Welcome, brave pilot, to ZTAR WARZ, the ultimate space adventure. Your mission, should you choose to accept it, involves piloting your spaceship through the treacherous star fields, battling enemy ships, and surviving the onslaught for as long as possible. Here is how you can control your destiny:</p>
+            <p>MOVEMENT:<br>Use the LEFT and RIGHT arrow keys to navigate your spaceship across the cosmos. Dodge enemy fire and navigate skillfully to survive.</p>
+            <p>FIRE WEAPONS:<br>Press the SPACEBAR to unleash your ship's laser cannons. Use them wisely to destroy incoming enemy ships and protect the galaxy.</p>
+            <p>POWER-UPS:<br>Collect golden orbs to activate your ship's shield, making you invulnerable for a short period. Use this power to your advantage.</p>
+            <p>Remember, pilot, the fate of the galaxy rests in your hands. Good luck!</p>
+            <button class="closeButton">Close</button>
+        </div>
+        
+    </div>
+    
+    
+    <!-- About Us Section -->
+    <div id="aboutUsSection" class="crawlSection" style="display: none;">
+        <div class="crawlContent">
+            <!-- Content styled like Star Wars crawl goes here -->
+            <p>ABOUT US</p>
+            <p>ZTAR WARZ is brought to you by a team of intergalactic developers, designers, and gaming aficionados at 01 FOUNDERS. Created with the passion for providing thrilling adventures in the vast expanse of space, this game is our ode to the classic space shooters we grew up loving.</p>
+            <p>This project, developed by Volodymyr Kyrychu, Sasha Panchenko, and Mehmet Sait Koseoglu, is crafted for educational purposes at 01 Founders coding school.</p>
+            <p>- Commander Code, the lead developer who charted the stars and coded the universe.</p>
+            <p>- Designer Nebula, who envisioned the galaxies and brought them to life.</p>
+            <p>- Admiral Algorithm, who ensured that every journey through the cosmos is unique and challenging.</p>
+            <p>This game is created for educational purposes, aiming to inspire the next generation of programmers and game developers. We hope it sparks a love for coding and game development in all who play it.</p>
+            <p>Through this project, we explored requestAnimationFrame, event loops, and performance optimization to achieve a jank-free animation experience. We learned about the intricacies of the DOM and the importance of efficient rendering.</p>
+            <p>Our game draws inspiration from classic titles, challenging us to reimagine these experiences with modern web technologies. This endeavor not only honed our technical skills but also our collaborative spirit.</p>
+            <p>We extend our gratitude to 01 Founders for providing us with the platform to explore our passion for game development and to all who have supported us on this journey.</p>
+            <p>May the source be with you.</p>
+            <!-- Add more information here -->
+            <button class="closeButton">Close</button>
+        </div>
+        
+    </div>
+      
+
+    <!-- Pause Menu Overlay (Initially Hidden) -->
+    <div id="pauseMenu" style="display: none;">
+      <div>Game Paused</div>
+      <button id="continueButton">Continue</button>
+      <button id="restartButton">Restart</button>
+    </div>
+
+
+    <!-- Game Container (Initially Hidden) -->
+    <div id="game-container" style="display: none;">
+        <div id="score">Score: 0</div>
+        <div id="lives">Lives: 3</div>
+        <div id="spaceship"></div>
+    </div>
+
+        <!-- Audio element for the crawl effect sound -->
+        <audio id="crawlSound" src="sounds/star-wars-theme-song.mp3"></audio>
+
+    <script src="game.js"></script>
+</body>
+</html>

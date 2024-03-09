@@ -1,9 +1,10 @@
 
-# ZTAR WARZ Game
+# Space Game Project
 
-This project, developed by Volodymyr Kyrychu, Sasha Panchenko, and Mehmet Sait Koseoglu, JDM Singh,
-is an educational endeavor at 01 Founders coding school. It aims to create a browser-based game using 
-only JavaScript, HTML, and CSS without any external libraries or frameworks.
+This project, developed by Volodymyr Kyrychuk, Sasha Panchenko, Mehmet Sait Koseoglu, JDM Singh, Natalia,
+is an endeavor at AI HACKATHON ENCODING venue. It aims to create a browser-based game using 
+only JavaScript, HTML, and CSS without any external libraries or frameworks. We used AI for generating some code:
+Chat GPT-3, Capilot, Cody AI Assistant.
 
 ## Objectives
 
@@ -37,7 +38,8 @@ Then, open your browser and navigate to `http://localhost:8000` to play the game
 
 ## Developer Tools
 
-Utilize browser Developer Tools for debugging and performance analysis. The Performance Tool is particularly useful for monitoring FPS and identifying potential bottlenecks.
+Utilize browser Developer Tools for debugging and performance analysis. The Performance Tool is particularly useful for 
+monitoring FPS and identifying potential bottlenecks.
 
 ## Learning Outcomes
 
@@ -48,11 +50,7 @@ Through this project, we explored:
 
 ## Acknowledgements
 
-We thank 01 Founders for the opportunity to work on this project and everyone who supported us throughout this journey.
+We thank Encode Hackathon 2024 and 01Founders School for the opportunity to work on this project 
+and everyone who supported us throughout this journey.
 
-'May the source be with you.'
-
-## Genres
-
-The game is inspired by classic titles such as Bomberman, Space Invaders, and Tetris, challenging us to reimagine these experiences with modern web technologies.
 

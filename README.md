@@ -6,7 +6,7 @@ is an endeavor at AI HACKATHON ENCODING venue. It aims to create a browser-based
 only JavaScript, HTML, and CSS without any external libraries or frameworks. We used AI for generating some code:
 Chat GPT-3, Capilot, Cody AI Assistant. Best AI Use Case for Gaming, Social or Digital Entertainment!
 
-## Objectives
+###Objectives
 
 - Run the game at a minimum of 60 FPS at all times without any frame drops.
 - Utilize `requestAnimationFrame` for smooth animations.
@@ -14,7 +14,7 @@ Chat GPT-3, Capilot, Cody AI Assistant. Best AI Use Case for Gaming, Social or D
 - Display a scoreboard with a timer/countdown, score (XP or points), and the number of lives remaining.
 - Optimize rendering performance by minimizing the use of layers.
 
-## How to Run
+### How to Run
 
 To run the game, follow these simple steps:
 
@@ -30,25 +30,25 @@ python -m http.server
 
 Then, open your browser and navigate to `http://localhost:8000` to play the game.
 
-## Instructions
+### Instructions
 
 - The game is controlled solely through the keyboard. Use the LEFT and RIGHT arrow keys to move your spaceship and the SPACEBAR to fire.
 - Your goal is to dodge enemy fire, destroy incoming enemy ships, and collect power-ups.
 - The game includes a pause menu accessible by pressing a designated pause key, allowing you to pause, restart, or continue the game.
 
-## Developer Tools
+### Developer Tools
 
 Utilize browser Developer Tools for debugging and performance analysis. The Performance Tool is particularly useful for 
 monitoring FPS and identifying potential bottlenecks.
 
-## Learning Outcomes
+### Learning Outcomes
 
 Through this project, we explored:
 - Animation techniques and achieving 60 FPS for a smooth gameplay experience.
 - The use of `requestAnimationFrame` and the JavaScript event loop.
 - DOM manipulation for game development without external libraries.
 
-## Acknowledgements
+### Acknowledgements
 
 We thank Encode Hackathon 2024 and 01Founders School for the opportunity to work on this project 
 and everyone who supported us throughout this journey.

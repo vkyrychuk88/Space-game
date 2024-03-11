@@ -53,9 +53,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let lives = 3; // Player's lives
     let gameRunning = false; // Flag to control the game's state
     let shield = null; // Global variable to hold the shield element
-    let shieldActive = false;
-    let gamePaused = false;
-    let animationFrameId = null;
+    let shieldActive = false;// Flag to control the shield's state
+    let gamePaused = false;// Flag to control the game's pause state
+    let animationFrameId = null;// Variable to hold the current animation frame ID
+    //------------------------------------------------------
     
 
 
